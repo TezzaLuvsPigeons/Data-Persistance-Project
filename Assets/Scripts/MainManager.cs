@@ -101,6 +101,8 @@ GameManager.instance.SaveHighScore();
     }
 
     public void MainMenu() {
+        GameManager.instance.SaveHighScore();
+        GameManager.instance.highScoreBeaten = false;
         SceneManager.LoadScene(0);
     }
 }
